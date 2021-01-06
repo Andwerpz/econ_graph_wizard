@@ -6,11 +6,98 @@
 	</head>
 
 	<body>
-
-		<h1><span style:"vertical-align:middle">Econ Graph Wizard</span></h1>
+		
+		<div class = "main">
+		
+			<nav>
+			
+				<div class = "nav-links">
+				
+					<ul>
+						<li><a href = "#">ASAD Model</a></li>
+						<li><a href = "#">Employment Model</a></li>
+						<li><a href = "#">Money Supply Model</a></li>
+					</ul>
+				
+				</div>
+			
+			</nav>
+			
+			<div class = "information">
+			
+				<div class = "overlay"></div>
+			
+				<div id = "circle">
+				
+					<div class = "feature one">
+						<img src = "images/block_question.png">
+						<div>
+							<h1>Filler Text</h1>
+							<p>filler text filler text filler text</p>
+						</div>
+						
+					</div>
+					
+					<div class = "feature two">
+						<img src = "images/block_question.png">
+						<div>
+							<h1>Filler Text</h1>
+							<p>filler text filler text filler text</p>
+						</div>
+					</div>
+					
+					<div class = "feature three">
+						<img src = "images/block_question.png">
+						<div>
+							<h1>Filler Text</h1>
+							<p>filler text filler text filler text</p>
+						</div>
+					</div>
+					
+					<div class = "feature four">
+						<img src = "images/block_question.png">
+						<div>
+							<h1>Filler Text</h1>
+							<p>filler text filler text filler text</p>
+						</div>
+					</div>
+				
+				</div>
+			
+			</div>
+			
+			<div class = "controls">
+				<img src = "images/arrow.png" id = "upBtn">
+				<h3>Features</h3>
+				<img src = "images/arrow.png" id = "downBtn">
+			</div>
+		
+		</div>
+		
+		<script>
+		
+		var circle = document.getElementById("circle");
+		var upBtn = document.getElementById("upBtn");
+		var downBtn = document.getElementById("downBtn");
+		
+		var rotateValue = circle.style.transform;
+		
+		var rotateSum;
+		
+		upBtn.onclick = function(){
+			rotateSum = rotateValue + "rotate(90deg)";
+			circle.style.transform = rotateSum;
+			rotateValue = rotateSum;
+		}
+		
+		upBtn.onclick = function(){
+			rotateSum = rotateValue + "rotate(-90deg)";
+			circle.style.transform = rotateSum;
+			rotateValue = rotateSum;
+		}
+		
+		</script>
 
 	</body>
-	
-	<script src = "js/main.js"></script>
 
 <html>

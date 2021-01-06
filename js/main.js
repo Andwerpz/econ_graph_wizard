@@ -1,1 +1,1 @@
-document.body.innerHTML += "filler text";
+document.body.innerHTML = "filler text";
