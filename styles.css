@@ -40,7 +40,7 @@ nav{
 	height: 1000px;
 	position: absolute;
 	top: 50%;
-	left: 10%;
+	left: -10%;
 	transform: translateY(-50%);
 }
 
@@ -51,7 +51,7 @@ nav{
 	top: 0;
 	left: 0;
 	border-radius: 50%;
-	background: #e4e4e4;
+	background: transparent;
 	transform: rotate(0deg);
 	transition: 1s;
 }
@@ -119,4 +119,16 @@ nav{
 	width: 15px;
 	cursor: pointer;
 	transform: rotate(180deg);
+}
+
+.overlay{
+	width: 0;
+	height: 0;
+	border-top: 500px solid #fff;
+	border-left: 500px solid #fff;
+	border-right: 500px solid transparent;
+	border-bottom: 500px solid #fff;
+	position: absolute;
+	left: 0;
+	right: 0;
 }

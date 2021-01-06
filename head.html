@@ -35,7 +35,7 @@
 				<div id = "circle">
 				
 					<div class = "feature one">
-						<img src = "images/block_question.png">
+						
 						<div>
 							<h1>Filler Text</h1>
 							<p>filler text filler text filler text</p>
@@ -44,7 +44,7 @@
 					</div>
 					
 					<div class = "feature two">
-						<img src = "images/block_question.png">
+						
 						<div>
 							<h1>Filler Text</h1>
 							<p>filler text filler text filler text</p>
@@ -52,7 +52,7 @@
 					</div>
 					
 					<div class = "feature three">
-						<img src = "images/block_question.png">
+						
 						<div>
 							<h1>Filler Text</h1>
 							<p>filler text filler text filler text</p>
@@ -60,7 +60,7 @@
 					</div>
 					
 					<div class = "feature four">
-						<img src = "images/block_question.png">
+						
 						<div>
 							<h1>Filler Text</h1>
 							<p>filler text filler text filler text</p>
@@ -90,13 +90,13 @@
 		var rotateSum;
 		
 		upBtn.onclick = function(){
-			rotateSum = rotateValue + "rotate(90deg)";
+			rotateSum = rotateValue + "rotate(-90deg)";
 			circle.style.transform = rotateSum;
 			rotateValue = rotateSum;
 		}
 		
-		upBtn.onclick = function(){
-			rotateSum = rotateValue + "rotate(-90deg)";
+		downBtn.onclick = function(){
+			rotateSum = rotateValue + "rotate(90deg)";
 			circle.style.transform = rotateSum;
 			rotateValue = rotateSum;
 		}
