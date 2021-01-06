@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset = "utf-8">
+		
+		<title>Employment Model</title>
+		
+		<link rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+		
+		<div class = "main">
+		
+			<nav>
+			
+				<div class = "nav-links">
+				
+					<ul>
+						<li><a href = "#">AS/AD Model</a></li>
+						<li><a href = "#">Employment Model</a></li>
+						<li><a href = "#">Money Market</a></li>
+					</ul>
+				
+				</div>
+			
+			</nav>
+			
+			<div class = "controls">
+				<img src = "images/arrow.png" id = "upBtn">
+				<h3>Features</h3>
+				<img src = "images/arrow.png" id = "downBtn">
+			</div>
+		
+		</div>
+		
+		<script>
+		
+		var circle = document.getElementById("circle");
+		var upBtn = document.getElementById("upBtn");
+		var downBtn = document.getElementById("downBtn");
+		
+		var rotateValue = circle.style.transform;
+		
+		var rotateSum;
+		
+		upBtn.onclick = function(){
+			rotateSum = rotateValue + "rotate(90deg)";
+			circle.style.transform = rotateSum;
+			rotateValue = rotateSum;
+		}
+		
+		upBtn.onclick = function(){
+			rotateSum = rotateValue + "rotate(-90deg)";
+			circle.style.transform = rotateSum;
+			rotateValue = rotateSum;
+		}
+		
+		</script>
+
+	</body>
+
+<html>
